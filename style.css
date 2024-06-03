@@ -12,6 +12,8 @@ body
 	background-repeat: no-repeat;
 }
 
+
+/* toute la page */
 .game { 
 	display: flex;
     flex-direction: column;
@@ -49,7 +51,7 @@ h1,h3 {
 	text-align: center;
 	color: black;
 } 
-
+/* Cadre autour de la grille*/
 .bbg {
     width: 400px;
     height: 400px;
@@ -66,7 +68,7 @@ h1,h3 {
      backdrop-filter: blur(4px);
      background-image: linear-gradient(45deg, rgba(32,152,255,0.4), rgba(172,50,249,0.4));
 }
-
+ /* text + grille */
 .header{
 	display: flex;
     flex-direction: column;
@@ -77,11 +79,15 @@ h1,h3 {
 }
 
 
-
+/* cellules X et 0 */
 .cell:active { 
 	outline: none; 
 } 
 
+.cell:hover{
+	transform: scale(1.05);
+}
+/* bouton reset */
 .button {
     padding: 12px 24px;
     background-color: hsl(222, 100%, 95%);
@@ -124,6 +130,8 @@ h1,h3 {
     transform: translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2);
 }
 
+
+/* message de fin*/
 #message
 {
     font-size: 50px;
@@ -132,9 +140,7 @@ h1,h3 {
 }
 
 
-.cell:hover{
-	transform: scale(1.05);
-}
+
 
 /*********************************GRILLE***********************************/
 
