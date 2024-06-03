@@ -10,32 +10,32 @@
 </head> 
 
 <body> 
+	<div id="game" class="game ">
         <div class="header" id="header">
-		    <h1>TIC TAC TOE</h1>  
-			<p>Le jeu commence quand vous cliquez sur une case</p>
-            <p>Le premier joueur commence avec les croix, le second avec les cercles</p> 
-        </div>
-		<div class="grille" id="grille"> 
-			<div class="row"> 
-				<input type="text" id= "b1" class="cell"> 
-				<input type="text" id= "b2" class="cell"> 
-				<input type="text" id= "b3" class="cell"> 
+				<h1>TIC TAC TOE</h1>  
+				<h3>Le jeu commence quand vous cliquez sur une case</h3>
+				<h3>Le premier joueur commence avec les croix, le second avec les cercles</h3> 
+			
+			<div class="bbg">
+			<div class="grille" id="grille"> 
+					<input type="text" id= "b1" class="cell" onclick="switchF(1);" readonly> 
+					<input type="text" id= "b2" class="cell" onclick="switchF(2);" readonly> 
+					<input type="text" id= "b3" class="cell" onclick="switchF(3);" readonly> 
+					<input type="text" id= "b4" class="cell" onclick="switchF(4);" readonly> 
+					<input type="text" id= "b5" class="cell" onclick="switchF(5);" readonly> 
+					<input type="text" id= "b6" class="cell" onclick="switchF(6);" readonly> 
+					<input type="text" id= "b7" class="cell" onclick="switchF(7);" readonly> 
+					<input type="text" id= "b8" class="cell" onclick="switchF(8);" readonly> 
+					<input type="text" id= "b9" class="cell" onclick="switchF(9);" readonly> 
+ 
 			</div> 
-			<div class="row"> 
-				<input type="text" id= "b4" class="cell"> 
-				<input type="text" id= "b5" class="cell"> 
-				<input type="text" id= "b6" class="cell"> 
-			</div> 
-			<div class="row"> 
-				<input type="text" id= "b7" class="cell"> 
-				<input type="text" id= "b8" class="cell"> 
-				<input type="text" id= "b9" class="cell"> 
-			</div> 
-		</div> 
+		</div>
+		</div>
+		<div id="message"></div>
 		<div>
-		<button id="button" class="button"> RESET </button> 
-		<p class="victory" id="victory"></p> 
+		<button id="button" class="button"> RESET GAME </button>  
         </div>
+	</div>
 </body> 
 
 </html>
